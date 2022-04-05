@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = findViewById(R.id.btn1);
 
-        EditText editText = findViewById(R.id.et1);
-        EditText et2 = findViewById(R.id.et2);
+        TextInputEditText editText = findViewById(R.id.et1);
+        TextInputEditText et2 = findViewById(R.id.et2);
         TextView textView = findViewById(R.id.tv1);
 
         editText.addTextChangedListener(new TextWatcher() {
